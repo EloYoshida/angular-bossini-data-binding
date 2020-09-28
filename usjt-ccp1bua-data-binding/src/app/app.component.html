@@ -1,0 +1,15 @@
+<div class="container mt-2">
+  <form>
+    <div class="form-group">
+      <label for="nomeInput">Nome</label>
+      <input type="text" id="nomeInput" class="form-control" placeholder="Digite um nome" #nomeInput>
+    </div>
+    <button type="button" class="btn btn-primary btn-block" (click)="adicionar(nomeInput)">Adicionar</button>
+    <div class="alert alert-primary mt-3 p-3" *ngIf="exibeCaixa">
+      {{nome}}
+    </div>
+  </form>
+</div>
+
+<!-- <p>Oi meu nome é {{nome}} e tenho {{idade}}</p>
+  <p>Lançando um dado: {{lancarDado()}}</p> -->
